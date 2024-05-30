@@ -1,0 +1,21 @@
+{
+  "uid": 0,
+  "fname": "Adam",
+  "lname": "Todd",
+  "username": "SickIGN",
+  "password": "hashed_pass",
+  "orgs" : [
+    //org IDs
+    0,
+    1,
+    2
+  ],
+  "msgs": [
+    {
+      "title": "This is a Title",
+      "text": "body",
+      "time": 177012490, //unix timestamp
+      "link": "link to interact with msg, if applicable"
+    }
+  ]
+}

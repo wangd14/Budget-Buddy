@@ -1,0 +1,52 @@
+{
+  "oid": 0,
+  "orgname": "Josh and Co.",
+  "users": [
+    {"uid": 0, "budgetperms": [-1 /*-1 is all*/], "admin": 1},
+    {"uid": 1, "budgetperms": [0, 1], "admin": 0}
+  ],
+  "receipts": [
+    {
+      "rid": 0,
+      "location": "Walmart",
+      "total": 54.39,
+      "items": [
+        //transaction IDs
+        0,
+        12,
+        1
+      ],
+      "filepath": "./images/r0"
+    }
+  ],
+  "goals": [
+    {
+      "gid": 0,
+      "bid": 0,
+      "name": "New PC",
+      "amnt": 599.99,
+      "datecreated": "2/19/2059",
+      "datedue": "2/18/2059"
+    }
+  ],
+  "budget": [
+    {
+      "bid": 0,
+      "name": "Groceries",
+      "amnt": 1000,
+      "datecreated": "2/19/2059",
+      "duration": "30d",
+      "continuous": 1
+    }
+  ], 
+  "transactions": [
+    {
+      "tid": 0,
+      "item": "Master Chief Soap",
+      "unitprice": 5.99,
+      "qty": 12,
+      "uid": 1
+    }
+  ],
+  "exists": true
+}

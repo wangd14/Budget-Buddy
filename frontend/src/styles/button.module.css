@@ -1,0 +1,54 @@
+
+.subscribe_button {
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+}
+
+/* psuedo-element shine animation left side */
+.subscribe_button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #FFF;
+  width: 2.5em;
+  height: 100%;
+  top: 0;
+  filter: blur(30px);
+  transform: translateX(-200px) skewX(-15deg);
+}
+
+/* psuedo-element shine animation right side */
+.subscribe_button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 2.5em;
+  height: 100%;
+  top: 0;
+  filter: blur(5px);
+  transform: translateX(-200px) skewX(-15deg);
+}
+
+.subscribe_button:hover {
+  cursor: pointer;
+}
+
+.subscribe_button:hover::before,
+.subscribe_button:hover::after {
+  transform: translateX(300px) skewX(-15deg);
+  transition: .6s;
+}
+
+@media (max-width: 375px) {
+  .subscribe_button {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 750px) {
+  .subscribe_button {
+    font-size: 1.5rem;
+  }
+}
+
